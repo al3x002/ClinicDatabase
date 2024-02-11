@@ -1,0 +1,9 @@
+CREATE TRIGGER SprawdzPeselPrzyDodawaniuPacjenta
+BEFORE INSERT ON Pacjenci
+FOR EACH ROW
+BEGIN
+IF LENGTH(NEW.PESEL) != 11 THEN
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Nieprawid³owa
+d³ugoœæ numeru PESEL!';
+END IF;
+END;
