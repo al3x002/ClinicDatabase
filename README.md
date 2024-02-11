@@ -2,7 +2,7 @@ This is a simple database that concerns the creation of a management system for 
 visits, employees, wards and the results of medical examinations. The system allows you to register visits, prescribing patients to doctors, monitoring diagnoses, 
 and analyzing statistics on the tests carried out. 
 
-The database contains 6 tables, 2 views. In addition, an example function, procedure, and trigger is provided.
+The database contains 6 tables, 2 views and 2 check restrictions. In addition, an example function, procedure, and trigger is provided.
 
 This is what the tables do:
 1. The 'Doctors' table shall store information about doctors, such as their first name, last name and
