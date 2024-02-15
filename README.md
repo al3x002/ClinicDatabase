@@ -30,3 +30,12 @@ patients, including the name of the doctor and the name of the patient.
 carried out by doctors, showing the number of tests performed for each
 doctor and the type of examination.
 
+FUNCTION:
+The function takes the doctor's ID (doctorId) as a parameter. Its task is to return the number of visits assigned to a given doctor with a given ID.
+
+PROCEDURE:
+This procedure takes two input parameters: visitId of type INT and newDiagnosis of type VARCHAR(255). Its purpose is to update the diagnosis for a visit with a specific identifier (visitId) to a new value (newDiagnoza).
+
+TRIGGER:
+This trigger is activated before adding a new row to the "Patients" table. It is defined "FOR EACH ROW", which means it will work for each new row inserted into the "Patients" table.
+
