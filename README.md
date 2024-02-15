@@ -16,3 +16,17 @@ name and job title.
 Location.
 6. The "Research" table records the results of medical examinations, including the patient, doctor,
 type of test and result.
+
+CHECK LIMITATIONS:
+1. The CHECK restriction ensures that each patient's PESEL number must be 11 characters long. If
+the length of the PESEL number will be different, adding a new record to the Patients table will fail.
+2. 2. The CHECK constraint checks if the visit date is a future date. If the date of your visit is
+earlier than today (CURDATE()), an attempt to add this visit will be blocked.
+
+VIEWS:
+1. The DoctorsPatients view displays the combined data about doctors and assigned to
+patients, including the name of the doctor and the name of the patient.
+2. ResearchStatistics view presents statistics about medical research
+carried out by doctors, showing the number of tests performed for each
+doctor and the type of examination.
+
